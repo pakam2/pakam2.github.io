@@ -1,0 +1,53 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    
+
+<div class="wrapper">
+    <p id="info">Stan jakość powietrza jest: </p>
+    <div id="con">
+      
+    </div>
+</div>
+
+
+<script>
+    var idNumToGet = window.location.search;
+    var idNum = idNumToGet.slice(10, 30);
+    // console.log(idNum);
+    var Url = "https://cors-anywhere.herokuapp.com/http://api.gios.gov.pl/pjp-api/rest/aqindex/getIndex/" + idNum;
+    fetch(Url)
+        .then(res => res.json())
+        .then(data => {
+            var airQua = data.stIndexLevel.indexLevelName;
+            var conDiv = document.getElementById('con');
+            var infoP = document.getElementById('info');
+            // console.log(airQua);
+            // conDiv.innerText = airQua;
+            let textInfo = infoP.innerText;
+            if (airQua == "Dobry" || airQua == "Bardzo dobry")
+            {
+                conDiv.innerHTML = "<img src='green.jpg' alt='Powitrze jest dziś czyste'>";
+                info.innerText = infoP.innerText + ' ' + airQua;
+            } else if (airQua == "Umiarkowany")
+            {
+                conDiv.innerHTML = '<img src="yellow.jpg" alt="Dobry stan powietrza">';
+            } else if (airQua == "") {
+
+
+            }
+        })
+
+</script>
+</body>
+
+</html>
+
+
+

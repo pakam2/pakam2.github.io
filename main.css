@@ -1,0 +1,53 @@
+ html{
+      /* background: url('city.png') no-repeat center fixed;
+      background-size: cover;
+       */
+    }
+    body{
+      font-family: Comic Sans MS, Comic Sans, cursive;
+      background-color: #0093D1;
+    }
+    .wrapper{
+      display:grid;
+      grid-template-columns: 1fr;
+      grid-gap: 5%;
+      
+    }
+    .wrapper > div {
+      padding-left:37%; 
+    }
+    #hDiv{
+      font-size: 1.5em;
+      margin-left: 1em;
+      color:#FAD00C;
+    }
+    a:link{
+      text-decoration: none;
+      color:#004C70;
+      padding: 0.5em;
+      font-style: bold;
+      font-size: 1.2em;
+      text-align: center;
+      width:300px;
+      display: inline-block;
+      border:3px solid black;
+      background-color:#E0A025;
+
+    }
+    a:visited{
+      border:3px solid black;
+      font-size: 1.2em;
+      color:#004C70;
+    }
+    a:hover{
+      background-color:#81B494;
+      font-size: 1.2em;
+      color:black;
+      box-shadow:5px 10px #888888;
+    }
+
+    #info{
+      margin-left: 37%;
+      font-size: 1.2em;
+      color:#FAD00C;
+    }

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <script>
+
+        const Url = "https://cors-anywhere.herokuapp.com/http://api.gios.gov.pl/pjp-api/rest/station/findAll";
+        fetch(Url)
+            .then(res => res.json())
+            .then(data => {
+                for (var i = 0; i < data.length; i++) {
+                    if (data[i].city.name.slice(0, 4) == "Krak") {
+
+                        var textForLink = data[i].stationName + " " + data[i].id;
+                        var divEl = document.createElement('div');
+                        divEl.innerHTML = "<a href='smog_info.html?idNumber=" + data[i].id + "'>" + textForLink + "</a>";
+                        var divCon = document.getElementById('wrapper');
+                        divCon.appendChild(divEl);
+                    }
+
+                }
+            }
+            );
+
+
+    </script>
+    <div class="whole">
+        <br>
+        <div id='hDiv'><strong>Lista stanowisk pomiarowych w Krakowie</strong></div><br>
+        <div class="wrapper" id="wrapper">
+
+
+        </div>
+    </div>
+</body>
+
+</html>
