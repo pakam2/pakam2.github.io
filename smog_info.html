@@ -28,19 +28,22 @@
             var airQua = data.stIndexLevel.indexLevelName;
             var conDiv = document.getElementById('con');
             var infoP = document.getElementById('info');
-            // console.log(airQua);
+            console.log(airQua);
             // conDiv.innerText = airQua;
             let textInfo = infoP.innerText;
-            if (airQua == "Dobry" || airQua == "Bardzo dobry")
+            if (airQua == "Dobry" || airQua == "Bardzo dgitobry")
             {
                 conDiv.innerHTML = "<img src='green.jpg' alt='Powitrze jest dziś czyste'>";
                 info.innerText = infoP.innerText + ' ' + airQua;
             } else if (airQua == "Umiarkowany")
             {
+                info.innerText = infoP.innerText + ' ' + airQua;
                 conDiv.innerHTML = '<img src="yellow.jpg" alt="Dobry stan powietrza">';
-            } else if (airQua == "") {
+            } else if (airQua == "Zły") 
+            {
 
-
+                info.innerText = infoP.innerText + ' ' + airQua;
+                conDiv.innerHTML = '<img src="red.jpg" alt="Zły stan powietrza">';
             }
         })
 
