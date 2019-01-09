@@ -4,7 +4,7 @@
        */
     }
     body{
-      font-family: Comic Sans MS, Comic Sans, cursive;
+      font-family: Comic Sans MS, Verdana, cursive;
       background-color: #0093D1;
     }
     .wrapper{
@@ -51,3 +51,9 @@
       font-size: 1.2em;
       color:#FAD00C;
     }
+
+  @media (max-width : 100px){
+      .wrapper > div {
+      padding-left:5%; 
+    }
+  }
