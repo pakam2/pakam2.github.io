@@ -78,13 +78,8 @@
       font-size: 1em;
     }
 
-    .wrapper_info{
-      display:grid;
-      grid-template-columns: 1fr;
-      grid-gap: 5%;
-    }
-    .wrapper_info > div{
-      padding-left: 15vw;
+    .wrapper_info div#con{
+      padding-left:10px;
     }
     .wrapper_info p#info {
       font-size: 1.8em;
@@ -112,7 +107,7 @@
       grid-template-columns: 1fr;
       grid-gap: 5%;
     }
-    .wrapper_info div{
+    .wrapper_info div#con{
       padding-left: 30vw;
     }
     .wrapper_info p#info {
