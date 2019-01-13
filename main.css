@@ -64,8 +64,21 @@
         color:#FAD00C;
     }
     a:link{
-      width:200px;
-      padding: 0.5em;
+      width:14em;
+      padding: 0.2em;
       font-size: 1em;
+    }
+  }
+  @media (max-height: 270px)
+  {
+    .wrapper{
+      grid-gap:2%;
+    }
+    .wrapper > div {
+      padding-left: 15vw;
+    }
+    a:link {
+      width: 70vw;
+
     }
   }
