@@ -83,7 +83,7 @@
       grid-template-columns: 1fr;
       grid-gap: 5%;
     }
-    .wrapper_info > div{
+    .wrapper_info div{
       padding-left: 25vw;
     }
     .wrapper_info p#info {
@@ -112,7 +112,7 @@
       grid-template-columns: 1fr;
       grid-gap: 5%;
     }
-    .wrapper_info > div{
+    .wrapper_info div{
       padding-left: 30vw;
     }
     .wrapper_info p#info {
