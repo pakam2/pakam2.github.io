@@ -9,8 +9,8 @@
 <body>
     
 
-<div class="wrapper">
-    <p id="info">Stan jakość powietrza jest: </p>
+<div class="wrapper_info">
+    <p id="info">Stan jakości powietrza jest: </p>
     <div id="con">
       
     </div>
@@ -31,7 +31,7 @@
             console.log(airQua);
             // conDiv.innerText = airQua;
             let textInfo = infoP.innerText;
-            if (airQua == "Dobry" || airQua == "Bardzo dgitobry")
+            if (airQua == "Dobry" || airQua == "Bardzo dobry")
             {
                 conDiv.innerHTML = "<img src='green.jpg' alt='Powitrze jest dziś czyste'>";
                 info.innerText = infoP.innerText + ' ' + airQua;
