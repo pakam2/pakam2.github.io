@@ -55,7 +55,7 @@
       padding-left: 45vw;
     }
     .wrapper_info p#info {
-      font-size: 1.5em;
+      font-size: 1.8em;
       padding-left: 40vw;
       color:#FAD00C;
     }
@@ -83,11 +83,11 @@
       grid-template-columns: 1fr;
       grid-gap: 5%;
     }
-    .wrapper_info div{
-      padding-left: 25vw;
+    .wrapper_info > div{
+      padding-left: 15vw;
     }
     .wrapper_info p#info {
-      font-size: 1.5em;
+      font-size: 1.8em;
       padding-left: 15vw;
       color:#FAD00C;
     }
@@ -116,7 +116,7 @@
       padding-left: 30vw;
     }
     .wrapper_info p#info {
-      font-size: 1.5em;
+      font-size: 1.8em;
       padding-left: 15vw;
       color:#FAD00C;
     }
