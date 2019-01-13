@@ -1,12 +1,11 @@
- html{
-      /* background: url('city.png') no-repeat center fixed;
-      background-size: cover;
-       */
-    }
+
     body{
       font-family: Comic Sans MS, Verdana, cursive;
       background-color: #0093D1;
     }
+    * {
+  box-sizing:border-box;
+}
     .wrapper{
       display:grid;
       grid-template-columns: 1fr;
@@ -36,34 +35,37 @@
     }
     a:visited{
       border:3px solid black;
-      font-size: 1.2em;
+      /* font-size: 1.2em; */
       color:#004C70;
     }
     a:hover{
       background-color:#81B494;
-      font-size: 1.2em;
+      /* font-size: 1.2em; */
       color:black;
       box-shadow:5px 10px #888888;
     }
 
     #info{
       margin-left: 37%;
-      font-size: 1.2em;
+      /* font-size: 1.2em; */
       color:#FAD00C;
     }
 
-  @media only screen and (max-width: 300px) {
-      .wrapper > div {
-        padding-left:0%; 
+  @media (max-width: 600px) {
+      .wrapper{
+        grid-gap:2%; 
       }
-      a {
-        width:40px;
-        font-size:1em;
+      .wrapper >  div{
+        padding-left:15%;
       }
-      #info{
-        margin-left:0%;
-      }
-      #con{
-        margin-left:2%;
-      }
+      #hDiv{
+        font-size: 1.2em;
+        margin-left: 0.5em;
+        color:#FAD00C;
+    }
+    a:link{
+      width:200px;
+      padding: 0.5em;
+      font-size: 1em;
+    }
   }
