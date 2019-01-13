@@ -56,10 +56,9 @@
         grid-gap:2%; 
       }
       .wrapper >  div{
-        padding-left:15vw;
+        padding-left:16vw;
       }
       #hDiv{
-        font-size: 1.4em;
         margin-left: 0.5em;
         color:#FAD00C;
     }
@@ -77,7 +76,7 @@
       grid-gap:2%;
     }
     .wrapper > div {
-      padding-left: 15vw;
+      padding-left: 16vw;
     }
     a:link {
       width: 70vw;
